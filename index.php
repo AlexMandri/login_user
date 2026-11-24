@@ -16,12 +16,12 @@ require_once("globals.php");
 <body>
     <div class="card">
         <h1>Welcome Back</h1>
-        <form onsubmit="return false">
+        <form action="login.php" method="POST">
             <div class="field">
-                <input type="email" placeholder="Email address" aria-label="password">
+                <input type="email" name="email" placeholder="Email address" aria-label="password">
             </div>
             <div class="field">
-                <input type="password" placeholder="password" aria-label="password">
+                <input type="password" name="senha" placeholder="password" aria-label="password">
             </div>
             <button type="submit">Log In</button>
         </form>
